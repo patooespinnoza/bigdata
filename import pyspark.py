@@ -39,4 +39,4 @@ df['Year'] = df['fecha'].dt.year
 df['Month'] = df['fecha'].dt.month
 df['Day'] = df['fecha'].dt.day
 
-print(df)
+df.to_csv('data_csv.csv', index=False)
